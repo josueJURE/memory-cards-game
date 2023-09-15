@@ -1,3 +1,5 @@
 const cards = Array.from(document.querySelectorAll(".memory-card"));
 
-console.log(cards)
+cards.forEach((card) => {
+  card.addEventListener("click", flipCard);
+});
